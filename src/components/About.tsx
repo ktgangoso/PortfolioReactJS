@@ -36,7 +36,7 @@ const About = () => {
                     About
                 </Typography>
 
-                <Typography mt={2}>
+                <Typography mt={3}>
                     Seek challenges in life to improve and develop my skills, enhance my knowledge, and use what I have learned.
                     Stepping outside one's comfort zone allows one to develop new abilities, hone current ones,
                     and gain a greater understanding of a range of topics and situations. This proactive strategy develops resilience,
@@ -45,7 +45,7 @@ const About = () => {
             </Box>
 
             {/* Profile Section */}
-            <Box>
+            <Box mt={8}>
                 <Box
                     sx={{
                         display: 'flex',
@@ -67,7 +67,7 @@ const About = () => {
                                 display: 'flex',
                                 flexDirection: { xs: 'column', sm: 'row' },
                                 justifyContent: 'space-around',
-                                gap: 4,
+                                gap: 20,
                                 mb: 2,
                             }}
                         >
