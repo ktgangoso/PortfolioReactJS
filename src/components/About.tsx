@@ -11,7 +11,7 @@ const InfoItem = ({ label, value }: { label: string; value: string }) => (
 
 const About = () => {
     return (
-        <Box sx={{ padding: '1rem', height: "100vh", marginTop: { xs: "2rem", md: "5rem" } }}>
+        <Box sx={{ padding: '1rem', height: "100vh", marginTop: { xs: "0", md: "5rem" } }}>
             {/* Heading Section */}
             <Box mb={3}>
                 <Typography
@@ -67,7 +67,6 @@ const About = () => {
                                 display: 'flex',
                                 flexDirection: { xs: 'column', sm: 'row' },
                                 justifyContent: 'space-around',
-                                gap: 20,
                                 mb: 2,
                             }}
                         >

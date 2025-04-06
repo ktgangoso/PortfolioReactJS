@@ -56,7 +56,7 @@ function Skills() {
                                 component="img"
                                 src={src}
                                 alt={title}
-                                sx={{ width: 80, height: 80, objectFit: 'contain', margin: '0 auto', mb: 1 }}
+                                sx={{ width: 50, height: 50, objectFit: 'contain', margin: '0 auto', mb: 1 }}
                             />
                             <Typography variant="body2" fontWeight={500}>
                                 {title}
