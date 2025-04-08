@@ -11,9 +11,9 @@ const InfoItem = ({ label, value }: { label: string; value: string }) => (
 
 const About = () => {
     return (
-        <Box sx={{ padding: '1rem', height: "100vh", marginTop: { xs: "0", md: "5rem" } }}>
+        <Box sx={{ padding: '1rem', minHeight: "100vh", marginTop: { xs: "0", md: "5rem" } }}>
             {/* Heading Section */}
-            <Box mb={3}>
+            <Box>
                 <Typography
                     sx={{
                         fontSize: '2rem',
@@ -80,7 +80,7 @@ const About = () => {
                             </Box>
                         </Box>
 
-                        <Typography sx={{ padding: "2rem" }}>
+                        <Typography sx={{ padding: {xs: "0", md: "2rem"} }}>
                             I'm developing a website that enables business support, human connections, and progress by offering a forum for opportunity and cooperation.
                             In addition to helping business owners reach a wider audience, this initiative enables me to improve my web development abilities and expertise.
                             I hope to hone my knowledge of contemporary technology through this experience while developing a significant and influential online environment for both individuals and companies.

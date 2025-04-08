@@ -38,7 +38,7 @@ function Resume() {
                 </Box>
 
                 {/* Work Experience */}
-                <Box sx={{ display: "flex", justifyContent: "space-around", flexDirection: "row", width: "100%" }}>
+                <Box sx={{ display: "flex", justifyContent: "space-around", flexDirection: {xs: "column", md: "row"}, width: "100%" }}>
                     <Box sx={{ width: "100%" }}>
                         <Typography variant="h5" fontWeight={700} color="#333" mb={3}>
                             Work Experience

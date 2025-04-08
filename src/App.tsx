@@ -11,12 +11,10 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-
 import MenuIcon from '@mui/icons-material/Menu';
 import FacebookIcon from '@mui/icons-material/FacebookRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
 import HomeIcon from '@mui/icons-material/HomeOutlined';
 import AboutIcon from '@mui/icons-material/PersonOutlineOutlined';
 import SkillsIcon from '@mui/icons-material/SettingsOutlined';
@@ -36,22 +34,26 @@ const socialIcons = [
 const navLinks = [
   { icon: <HomeIcon />, label: 'Home', href: '/dashboard' },
   { icon: <AboutIcon />, label: 'About', href: '/products' },
-  { icon: <SkillsIcon />, label: 'Skills', href: '/orders' },
-  { icon: <ResumeIcon />, label: 'Resume', href: '/users' },
-  { icon: <PortfolioIcon />, label: 'Portfolio', href: '/users' },
-  { icon: <ContactIcon />, label: 'Contact', href: '/users' },
-  { icon: <HireMeIcon />, label: 'Hire Me', href: '/users' },
+  { icon: <SkillsIcon />, label: 'Skills', href: '/skills' },
+  { icon: <ResumeIcon />, label: 'Resume', href: '/resume' },
+  { icon: <PortfolioIcon />, label: 'Portfolio', href: '/portfolio' },
+  { icon: <ContactIcon />, label: 'Contact', href: '/contact' },
+  { icon: <HireMeIcon />, label: 'Hire Me', href: '/hireme' },
 ];
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('/dashboard');
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const typedEl = useRef(null); // ✅ Moved inside App
 
 
-
   const toggleDrawer = () => setDrawerOpen((prev) => !prev);
+
+  useEffect(() => {
+    setActiveLink(window.location.pathname);
+  }, []);
 
   const drawerContent = (
     <Box
@@ -61,8 +63,37 @@ function App() {
         bgcolor: '#040b14',
         height: '100vh',
         color: '#fff',
-      }}
-    >
+      }}>
+
+      <Box sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: "center",
+      }}>
+        <Box sx={{
+          height: "7rem",
+          width: "7rem",
+          backgroundColor: "rgba(160, 160, 160, 0.15)",
+          borderRadius: "50%",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: "center",
+        }}>
+          <Box
+            component="main"
+            sx={{
+              p: 1,
+              height: '5rem',
+              width: "5rem",
+              backgroundImage: 'url(/home/profile/my-profile-img.jpg)',
+              backgroundSize: 'cover',
+              color: '#fff',
+              borderRadius: "50%",
+            }} />
+        </Box>
+      </Box>
+
+
       <Typography
         variant="h6"
         sx={{
@@ -70,8 +101,7 @@ function App() {
           fontWeight: 700,
           fontSize: '1.5rem',
           mb: 2,
-        }}
-      >
+        }}>
         Kevin Gangoso
       </Typography>
 
@@ -82,9 +112,9 @@ function App() {
             key={index}
             sx={{
               borderRadius: '50%',
-              bgcolor: '#5b5b5b',
+              backgroundColor: "rgba(160, 160, 160, 0.15)",
               color: '#fff',
-              p: 1,
+              p: ".3rem",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -100,21 +130,39 @@ function App() {
         ))}
       </Box>
 
-      {/* Navigation Links */}
       <List>
-        {navLinks.map(({ icon, label, href }, index) => (
-          <ListItemButton
-            key={index}
-            component="a"
-            href={href}
-            onClick={() => setDrawerOpen(false)}
-          >
-            {icon}
-            <ListItemText primary={label} sx={{ ml: 1 }} />
-          </ListItemButton>
-        ))}
+        {navLinks.map(({ icon, label, href }, index) => {
+          const isActive = activeLink === href;
+
+          return (
+            <ListItemButton
+              key={index}
+              component="a"
+              href={href}>
+              <Box
+                component="span"
+                sx={{
+                  color: isActive ? '#007bff' : '#aaa',
+                  display: 'flex',
+                  alignItems: 'center',
+                }}>
+                {icon}
+              </Box>
+              <ListItemText
+                primary={label}
+                sx={{
+                  ml: 1,
+                  '& .MuiTypography-root': {
+                    color: isActive ? '#fff' : '#aaa',
+                    fontWeight: isActive ? 600 : 400,
+                  },
+                }}
+              />
+            </ListItemButton>
+          );
+        })}
       </List>
-    </Box>
+    </Box >
   );
 
   return (
@@ -130,8 +178,7 @@ function App() {
             zIndex: theme.zIndex.drawer + 2,
             bgcolor: 'white',
             boxShadow: 1,
-          }}
-        >
+          }}>
           <MenuIcon />
         </IconButton>
       )}
@@ -149,8 +196,7 @@ function App() {
             width: 300,
             boxSizing: 'border-box',
           },
-        }}
-      >
+        }}>
         {drawerContent}
       </Drawer>
     </Box>

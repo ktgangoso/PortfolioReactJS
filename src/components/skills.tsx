@@ -44,7 +44,11 @@ function Skills() {
                 <Box
                     sx={{
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+                        gridTemplateColumns: {
+                            xs: '1fr 1fr', // 2 columns on extra small (mobile)
+                            sm: '1fr 1fr', // keep 2 columns on small
+                            md: 'repeat(4, 1fr)', // 4 columns on medium and up
+                        },
                         gap: 10,
                         mt: 3,
                         textAlign: 'center',
