@@ -69,7 +69,7 @@ function Grocerease() {
                     </Box>
                 </Box>
 
-                <Box sx={{ width: "50%", display: "flex", justifyContent: "space-between", flexDirection: "column", gap: "2rem" }}>
+                <Box sx={{ width: {xs: "100%", md: "50%"}, display: "flex", justifyContent: "space-between", flexDirection: "column", gap: "2rem" }}>
                     <Box sx={{
                         padding: 2,
                         borderRadius: '8px',

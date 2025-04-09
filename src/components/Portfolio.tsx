@@ -100,7 +100,7 @@ function Portfolio() {
                                 <Box
                                     className="image"
                                     component="img"
-                                    src="/porfolio/web1/GrocerEaseStore.png"
+                                    src="/web1/GrocerEaseStore.png"
                                     alt="GrocerEase Store"
                                     sx={{
                                         width: '100%',
@@ -176,7 +176,7 @@ function Portfolio() {
                                 <Box
                                     className="image"
                                     component="img"
-                                    src="/porfolio/dashboard/GrocerEaseStoreAdmin.png"
+                                    src="/dashboard/GrocerEaseStoreAdmin.png"
                                     alt="GrocerEase Store"
                                     sx={{
                                         width: '100%',
@@ -251,7 +251,7 @@ function Portfolio() {
                                 <Box
                                     className="image"
                                     component="img"
-                                    src="/porfolio/web1/GrocerEaseStore.png"
+                                    src="/web1/GrocerEaseStore.png"
                                     alt="GrocerEase Store"
                                     sx={{
                                         width: '100%',
