@@ -33,18 +33,12 @@ const socialIcons = [
 ];
 
 const navLinks = [
-  { icon: <HomeIcon />, label: 'Home', href: '/#home' },
-  { icon: <AboutIcon />, label: 'About', href: '/#about' },
-  { icon: <SkillsIcon />, label: 'Skills', href: '/#skills' },
-  { icon: <ResumeIcon />, label: 'Resume', href: '/#resume' },
-  { icon: <PortfolioIcon />, label: 'Portfolio', href: '/#portfolio' },
-  { icon: <ContactIcon />, label: 'Contact', href: '/#contact' },
-  { icon: <HireMeIcon />, label: 'Hire Me', href: '/hireme' },
+  { icon: <HomeIcon />, label: 'Home', href: '../../#home' },
 ];
 
-function App() {
+function Appportfolio() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('/dashboard');
+  const [activeLink, setActiveLink] = useState('/#');
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   // const typedEl = useRef(null); // 
@@ -226,4 +220,4 @@ function App() {
   );
 }
 
-export default App;
+export default Appportfolio;

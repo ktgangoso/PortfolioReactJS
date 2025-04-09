@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Box, Typography, Tabs, Tab, Link as MuiLink } from '@mui/material'
+import { Link as RouterLink } from 'react-router-dom';
 
 
 function Portfolio() {
@@ -72,10 +73,9 @@ function Portfolio() {
 
                         {/* Web1 */}
                         <MuiLink
-                            href="https://your-project-url.com"
+                            component={RouterLink}
+                            to="/portfoliopage/Grocerease"
                             underline="none"
-                            target="_blank"
-                            rel="noopener noreferrer"
                             sx={{ display: 'inline-block' }}
                         >
                             <Box
