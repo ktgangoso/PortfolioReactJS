@@ -52,6 +52,7 @@ function Portfolio() {
                                     textTransform: 'none',
                                     fontSize: "1rem",
                                     color: '#757d87',
+                                    display: "flex", justifyContent: "center", alignItems: "center",
                                     '&:hover': {
                                         backgroundColor: 'transparent',
                                         color: '#149ddd',
