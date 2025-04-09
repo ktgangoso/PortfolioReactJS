@@ -88,7 +88,7 @@ function Portfolio() {
                                         transform: 'scale(1.1)',
                                     },
                                     '&:hover .overlay': {
-                                        backgroundColor: 'rgba(128, 128, 128, 0.4)',
+                                        background: 'rgba(0, 0, 0, 0.6)',
                                     },
                                     '&:hover .title': {
                                         opacity: 1,
@@ -164,7 +164,7 @@ function Portfolio() {
                                         transform: 'scale(1.1)',
                                     },
                                     '&:hover .overlay': {
-                                        backgroundColor: 'rgba(128, 128, 128, 0.4)',
+                                        background: 'rgba(0, 0, 0, 0.6)',
                                     },
                                     '&:hover .title': {
                                         opacity: 1,
@@ -175,7 +175,7 @@ function Portfolio() {
                                 <Box
                                     className="image"
                                     component="img"
-                                    src="/porfolio/web1/GrocerEaseStore.png"
+                                    src="/porfolio/dashboard/GrocerEaseStoreAdmin.png"
                                     alt="GrocerEase Store"
                                     sx={{
                                         width: '100%',
@@ -239,7 +239,7 @@ function Portfolio() {
                                         transform: 'scale(1.1)',
                                     },
                                     '&:hover .overlay': {
-                                        backgroundColor: 'rgba(128, 128, 128, 0.4)',
+                                        background: 'rgba(0, 0, 0, 0.6)',
                                     },
                                     '&:hover .title': {
                                         opacity: 1,
