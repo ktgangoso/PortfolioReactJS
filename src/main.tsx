@@ -9,7 +9,7 @@ import About from './components/About.tsx';
 import Skills from './components/skills.tsx';
 import Resume from './components/Resume.tsx';
 import Portfolio from './components/Portfolio.tsx';
-
+import Contact from './components/Contact.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -22,6 +22,7 @@ createRoot(document.getElementById('root')!).render(
         <Skills />
         <Resume />
         <Portfolio/>
+        <Contact />
       </Box>
     </Box>
   </StrictMode>
