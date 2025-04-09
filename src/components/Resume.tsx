@@ -7,10 +7,8 @@ function Resume() {
             <Box sx={{
                 padding: '1rem',
                 height: { xs: "100%", md: "100%" },
-                marginTop: { xs: "2rem", md: "5rem" },
+                marginTop: { xs: "2rem", md: "2rem" },
                 backgroundColor: '#fff',
-                borderRadius: '8px',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
             }}>
                 {/* Heading Section */}
                 <Box mb={3}>
@@ -38,7 +36,7 @@ function Resume() {
                 </Box>
 
                 {/* Work Experience */}
-                <Box sx={{ display: "flex", justifyContent: "space-around", flexDirection: {xs: "column", md: "row"}, width: "100%" }}>
+                <Box sx={{ display: "flex", justifyContent: "space-around", flexDirection: { xs: "column", md: "row" }, width: "100%" }}>
                     <Box sx={{ width: "100%" }}>
                         <Typography variant="h5" fontWeight={700} color="#333" mb={3}>
                             Work Experience

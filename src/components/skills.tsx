@@ -11,12 +11,16 @@ const images = [
     { src: '/skills/mysql.png', title: 'MySQL' },
     { src: '/skills/php.png', title: 'PHP' },
     { src: '/skills/react.png', title: 'React.JS' },
+    { src: '/skills/network.jpg', title: 'Network Troubleshooting' },
+    { src: '/skills/prtg.jpg', title: 'PRTG Monitoring' },
+    { src: '/skills/zabbix.png', title: 'Zabbix' },
+    { src: '/skills/msoffice.jpg', title: 'MS Office' },
 ];
 
 function Skills() {
     return (
         <div>
-            <Box sx={{ padding: '1rem', height: "100vh", marginTop: { xs: "2rem", md: "5rem" } }}>
+            <Box sx={{ padding: '1rem', minHeight: "100vh", marginTop: { xs: "2rem", md: "2rem" } }}>
                 {/* Heading Section */}
                 <Box mb={3}>
                     <Typography

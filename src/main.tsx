@@ -8,6 +8,8 @@ import { Box } from '@mui/material';
 import About from './components/About.tsx';
 import Skills from './components/skills.tsx';
 import Resume from './components/Resume.tsx';
+import Portfolio from './components/Portfolio.tsx';
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -19,6 +21,7 @@ createRoot(document.getElementById('root')!).render(
         <About />
         <Skills />
         <Resume />
+        <Portfolio/>
       </Box>
     </Box>
   </StrictMode>
