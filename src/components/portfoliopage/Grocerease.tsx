@@ -4,10 +4,10 @@ import { Box, IconButton, Typography, Divider } from '@mui/material';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const images = [
-    '././portfolio/web1/GrocerEaseStore.png',
-    '/portfolio/web1/website2.png',
-    '/portfolio/web1/website3.png',
-    '/portfolio/web1/website4.png'
+    '/web1/GrocerEaseStore.png',
+    '/web1/website2.png',
+    '/web1/website3.png',
+    '/web1/website4.png',
 ];
 
 function Grocerease() {
@@ -43,7 +43,6 @@ function Grocerease() {
                                     style={{
                                         width: '100%',
                                         height: 'auto',
-                                        borderRadius: '16px',
                                         objectFit: 'cover'
                                     }}
                                 />
