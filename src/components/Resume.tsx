@@ -3,7 +3,7 @@ import { Box, Typography, List, ListItem, Divider } from '@mui/material';
 
 function Resume() {
     return (
-        <div>
+        <div id='resume'>
             <Box sx={{
                 padding: '1rem',
                 height: { xs: "100%", md: "100%" },

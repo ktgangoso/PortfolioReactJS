@@ -11,84 +11,86 @@ const InfoItem = ({ label, value }: { label: string; value: string }) => (
 
 const About = () => {
     return (
-        <Box sx={{ padding: '1rem', minHeight: "100vh", marginTop: { xs: "0", md: "5rem" } }}>
-            {/* Heading Section */}
-            <Box>
-                <Typography
-                    sx={{
-                        fontSize: '2rem',
-                        fontWeight: 700,
-                        position: 'relative',
-                        display: 'inline-block',
-                        pb: 1,
-                        color: "#757d87",
-                        '&::after': {
-                            content: '""',
-                            position: 'absolute',
-                            bottom: 0,
-                            left: 0,
-                            height: '0.2rem',
-                            width: '50%',
-                            backgroundColor: '#149ddd',
-                        },
-                    }}
-                >
-                    About
-                </Typography>
+        <div id='about'>
+            <Box sx={{ padding: '1rem', minHeight: "100vh", marginTop: { xs: "0", md: "5rem" } }}>
+                {/* Heading Section */}
+                <Box>
+                    <Typography
+                        sx={{
+                            fontSize: '2rem',
+                            fontWeight: 700,
+                            position: 'relative',
+                            display: 'inline-block',
+                            pb: 1,
+                            color: "#757d87",
+                            '&::after': {
+                                content: '""',
+                                position: 'absolute',
+                                bottom: 0,
+                                left: 0,
+                                height: '0.2rem',
+                                width: '50%',
+                                backgroundColor: '#149ddd',
+                            },
+                        }}
+                    >
+                        About
+                    </Typography>
 
-                <Typography mt={3}>
-                    Seek challenges in life to improve and develop my skills, enhance my knowledge, and use what I have learned.
-                    Stepping outside one's comfort zone allows one to develop new abilities, hone current ones,
-                    and gain a greater understanding of a range of topics and situations. This proactive strategy develops resilience,
-                    adaptability, and inventiveness in addition to enhancing personal and professional qualities.
-                </Typography>
-            </Box>
+                    <Typography mt={3}>
+                        Seek challenges in life to improve and develop my skills, enhance my knowledge, and use what I have learned.
+                        Stepping outside one's comfort zone allows one to develop new abilities, hone current ones,
+                        and gain a greater understanding of a range of topics and situations. This proactive strategy develops resilience,
+                        adaptability, and inventiveness in addition to enhancing personal and professional qualities.
+                    </Typography>
+                </Box>
 
-            {/* Profile Section */}
-            <Box mt={8}>
-                <Box
-                    sx={{
-                        display: 'flex',
-                        gap: 3,
-                        flexDirection: { xs: 'column', md: 'row' },
-                        alignItems: 'flex-start',
-                    }}
-                >
+                {/* Profile Section */}
+                <Box mt={8}>
                     <Box
-                        component="img"
-                        src="/home/profile/my-profile-img.jpg"
-                        alt="Profile"
-                        sx={{ maxWidth: 200, borderRadius: 2 }}
-                    />
-
-                    <Box sx={{ flex: 1 }}>
+                        sx={{
+                            display: 'flex',
+                            gap: 3,
+                            flexDirection: { xs: 'column', md: 'row' },
+                            alignItems: 'flex-start',
+                        }}
+                    >
                         <Box
-                            sx={{
-                                display: 'flex',
-                                flexDirection: { xs: 'column', sm: 'row' },
-                                justifyContent: 'space-around',
-                                mb: 2,
-                            }}
-                        >
-                            <Box>
-                                <InfoItem label="Website" value="" />
-                                <InfoItem label="City" value="Taguig City" />
-                            </Box>
-                            <Box>
-                                <InfoItem label="Email" value="kevin.gangoso@gmail.com" />
-                                <InfoItem label="Phone No." value="09212223818" />
-                            </Box>
-                        </Box>
+                            component="img"
+                            src="/home/profile/my-profile-img.jpg"
+                            alt="Profile"
+                            sx={{ maxWidth: 200, borderRadius: 2 }}
+                        />
 
-                        <Typography sx={{ padding: {xs: "0", md: "2rem"} }}>
-                            I'm developing a website that enables business support, human connections, and progress by offering a forum for opportunity and cooperation.
-                            In addition to helping business owners reach a wider audience, this initiative enables me to improve my web development abilities and expertise.
-                            I hope to hone my knowledge of contemporary technology through this experience while developing a significant and influential online environment for both individuals and companies.
-                        </Typography>
+                        <Box sx={{ flex: 1 }}>
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: { xs: 'column', sm: 'row' },
+                                    justifyContent: 'space-around',
+                                    mb: 2,
+                                }}
+                            >
+                                <Box>
+                                    <InfoItem label="Website" value="" />
+                                    <InfoItem label="City" value="Taguig City" />
+                                </Box>
+                                <Box>
+                                    <InfoItem label="Email" value="kevin.gangoso@gmail.com" />
+                                    <InfoItem label="Phone No." value="09212223818" />
+                                </Box>
+                            </Box>
+
+                            <Typography sx={{ padding: { xs: "0", md: "2rem" } }}>
+                                I'm developing a website that enables business support, human connections, and progress by offering a forum for opportunity and cooperation.
+                                In addition to helping business owners reach a wider audience, this initiative enables me to improve my web development abilities and expertise.
+                                I hope to hone my knowledge of contemporary technology through this experience while developing a significant and influential online environment for both individuals and companies.
+                            </Typography>
+                        </Box>
                     </Box>
                 </Box>
             </Box>
-        </Box>
+        </div>
     );
 };
 

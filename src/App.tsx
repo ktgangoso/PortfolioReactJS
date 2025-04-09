@@ -32,12 +32,12 @@ const socialIcons = [
 ];
 
 const navLinks = [
-  { icon: <HomeIcon />, label: 'Home', href: '/dashboard' },
-  { icon: <AboutIcon />, label: 'About', href: '/products' },
-  { icon: <SkillsIcon />, label: 'Skills', href: '/skills' },
-  { icon: <ResumeIcon />, label: 'Resume', href: '/resume' },
-  { icon: <PortfolioIcon />, label: 'Portfolio', href: '/portfolio' },
-  { icon: <ContactIcon />, label: 'Contact', href: '/contact' },
+  { icon: <HomeIcon />, label: 'Home', href: '/#home' },
+  { icon: <AboutIcon />, label: 'About', href: '/#about' },
+  { icon: <SkillsIcon />, label: 'Skills', href: '/#skills' },
+  { icon: <ResumeIcon />, label: 'Resume', href: '/#resume' },
+  { icon: <PortfolioIcon />, label: 'Portfolio', href: '/#portfolio' },
+  { icon: <ContactIcon />, label: 'Contact', href: '/#contact' },
   { icon: <HireMeIcon />, label: 'Hire Me', href: '/hireme' },
 ];
 
@@ -46,7 +46,7 @@ function App() {
   const [activeLink, setActiveLink] = useState('/dashboard');
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const typedEl = useRef(null); // ✅ Moved inside App
+  // const typedEl = useRef(null); // 
 
 
   const toggleDrawer = () => setDrawerOpen((prev) => !prev);
@@ -137,15 +137,36 @@ function App() {
           return (
             <ListItemButton
               key={index}
-              component="a"
-              href={href}>
+              onClick={() => {
+                if (href.startsWith('/#')) {
+                  const id = href.replace('/#', '');
+                  const target = document.getElementById(id);
+                  if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    setActiveLink(href);
+                    if (isMobile) setDrawerOpen(false);
+                  }
+                } else {
+                  window.location.href = href;
+                }
+              }}
+              sx={{
+                px: 2,
+                py: 1,
+                '&:hover': {
+                  backgroundColor: 'rgba(255,255,255,0.05)',
+                },
+                transition: 'background-color 0.3s ease',
+              }}
+            >
               <Box
                 component="span"
                 sx={{
                   color: isActive ? '#007bff' : '#aaa',
                   display: 'flex',
                   alignItems: 'center',
-                }}>
+                }}
+              >
                 {icon}
               </Box>
               <ListItemText
@@ -155,6 +176,7 @@ function App() {
                   '& .MuiTypography-root': {
                     color: isActive ? '#fff' : '#aaa',
                     fontWeight: isActive ? 600 : 400,
+                    transition: 'color 0.3s ease',
                   },
                 }}
               />

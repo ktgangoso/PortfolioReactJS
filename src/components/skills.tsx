@@ -19,7 +19,7 @@ const images = [
 
 function Skills() {
     return (
-        <div>
+        <div id='skills'>
             <Box sx={{ padding: '1rem', minHeight: "100vh", marginTop: { xs: "2rem", md: "2rem" } }}>
                 {/* Heading Section */}
                 <Box mb={3}>

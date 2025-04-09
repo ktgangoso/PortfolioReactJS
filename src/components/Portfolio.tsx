@@ -11,7 +11,7 @@ function Portfolio() {
     };
 
     return (
-        <div>
+        <div id='portfolio'>
             <Box sx={{ padding: '1rem', minHeight: "100vh", marginTop: { xs: "0", md: "5rem" } }}>
                 <Box>
                     <Typography
