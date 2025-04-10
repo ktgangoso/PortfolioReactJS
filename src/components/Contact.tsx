@@ -81,7 +81,7 @@ function Contact() {
 
                 <Box sx={{
                     display: "flex", flexDirection: { xs: "column", md: "row" },
-                    gap: "1rem", padding: "1rem", justifyContent: "space-between", width: "auto",
+                    gap: "1rem", padding: {xs: ".5rem", md: "1rem"}, justifyContent: "space-between", width: "auto",
                 }}>
                     <Box sx={{ width: { xs: "100%", md: "70%" } }}>
                         <Paper
@@ -90,7 +90,7 @@ function Contact() {
                             onSubmit={handleSubmit}
                             sx={{
                                 mt: 4,
-                                padding: '2rem',
+                                padding: {xs: "1rem", md: '2rem'},
                                 borderRadius: '1rem',
                                 backgroundColor: '#ffffff',
                                 display: 'flex',

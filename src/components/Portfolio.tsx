@@ -5,15 +5,10 @@ import { Link as RouterLink } from 'react-router-dom';
 
 function Portfolio() {
 
-    const [value, setValue] = React.useState(0);
-
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-        setValue(newValue);
-    };
 
     return (
         <div id='portfolio'>
-            <Box sx={{ padding: '1rem', minHeight: "100vh", marginTop: { xs: "0", md: "5rem" } }}>
+            <Box sx={{ padding: '1rem', minHeight: "100vh", marginTop: { xs: "1rem", md: "5rem" } }}>
                 <Box>
                     <Typography
                         sx={{
@@ -37,38 +32,8 @@ function Portfolio() {
                         Portfolio
                     </Typography>
                 </Box>
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "1rem", flexDirection: "column" }}>
-                    <Tabs
-                        value={value}
-                        onChange={handleChange}
-                        centered
-                        TabIndicatorProps={{ style: { display: 'none' } }}
-                        sx={{ borderBottom: 'none' }}
-                    >
-                        {["All", "Website", "Dashboard", "Personal Project"].map((label, index) => (
-                            <Tab
-                                key={index}
-                                label={label}
-                                sx={{
-                                    textTransform: 'none',
-                                    fontSize: "1rem",
-                                    color: '#757d87',
-                                    display: "flex", justifyContent: "center", alignItems: "center",
-                                    '&:hover': {
-                                        backgroundColor: 'transparent',
-                                        color: '#149ddd',
-                                    },
-                                    '&.Mui-selected': {
-                                        color: '#149ddd',
-                                    },
-                                    '&.Mui-focusVisible': {
-                                        outline: 'none',
-                                    },
-                                }}
-                            />
-                        ))}
-                    </Tabs>
-
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "1rem", flexDirection: "column", marginTop: {xs: "1rem", md: "0"} }}>
+        
                     <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: "1rem", justifyContent: "space-between" }}>
 
                         {/* Web1 */}
