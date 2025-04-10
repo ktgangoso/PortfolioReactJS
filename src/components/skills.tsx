@@ -15,6 +15,9 @@ const images = [
     { src: '/skills/prtg.jpg', title: 'PRTG Monitoring' },
     { src: '/skills/zabbix.png', title: 'Zabbix' },
     { src: '/skills/msoffice.jpg', title: 'MS Office' },
+    { src: '/skills/vsc.webp', title: 'Visual Studio Code' },
+    { src: '/skills/github.png', title: 'Github' },
+    { src: '/skills/spicework.png', title: 'Spice Work Ticketing' },
 ];
 
 function Skills() {
@@ -51,9 +54,9 @@ function Skills() {
                         gridTemplateColumns: {
                             xs: '1fr 1fr', // 2 columns on extra small (mobile)
                             sm: '1fr 1fr', // keep 2 columns on small
-                            md: 'repeat(4, 1fr)', // 4 columns on medium and up
+                            md: 'repeat(6, 1fr)', // 4 columns on medium and up
                         },
-                        gap: 10,
+                        gap: 5,
                         mt: 3,
                         textAlign: 'center',
                     }}

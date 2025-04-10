@@ -32,7 +32,7 @@ function Portfolio() {
                         Portfolio
                     </Typography>
                 </Box>
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "1rem", flexDirection: "column", marginTop: {xs: "1rem", md: "0"} }}>
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "1rem", flexDirection: "column", marginTop: {xs: "1rem", md: "2rem"} }}>
         
                     <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: "1rem", justifyContent: "space-between" }}>
 
