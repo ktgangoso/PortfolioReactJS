@@ -1,15 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
-import {
-  Box,
-  Drawer,
-  IconButton,
-  List,
-  ListItemButton,
-  ListItemText,
-  Typography,
-  useMediaQuery,
-} from '@mui/material';
+import { Box, Drawer, IconButton, List, ListItemButton, ListItemText, Typography, useMediaQuery, } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import FacebookIcon from '@mui/icons-material/FacebookRounded';
@@ -52,9 +43,32 @@ function App() {
 
   const toggleDrawer = () => setDrawerOpen((prev) => !prev);
 
+
   useEffect(() => {
-    setActiveLink(window.location.pathname);
+    const sectionElements = navLinks
+      .filter(link => link.href.startsWith('/#'))
+      .map(link => document.getElementById(link.href.replace('/#', '')))
+      .filter(Boolean); // removes null values
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveLink(`/#${entry.target.id}`);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    sectionElements.forEach(section => observer.observe(section!));
+
+    return () => {
+      sectionElements.forEach(section => observer.unobserve(section!));
+    };
   }, []);
+
+
 
   const drawerContent = (
     <Box
