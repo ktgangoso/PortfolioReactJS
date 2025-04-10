@@ -4,13 +4,13 @@ import { Box, IconButton, Typography, Button } from '@mui/material';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const images = [
-    '/web1/GrocerEaseStore.png',
-    '/web1/website2.png',
-    '/web1/website3.png',
-    '/web1/website4.png',
+    '/vinn/vinn1.png',
+    '/vinn/vinn2.png',
+    '/vinn/vinn3.png',
+    '/vinn/vinn4.png',
 ];
 
-function Grocerease() {
+function Vinn() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
@@ -82,9 +82,9 @@ function Grocerease() {
                     }}>
                         <Typography sx={{ fontSize: "1.5rem", fontWeight: "600" }}>Project information</Typography>
                         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "column", gap: "1rem" }}>
-                            <Typography sx={{ fontSize: "15px" }}><strong>Categories:</strong> Website</Typography>
-                            <Typography sx={{ fontSize: "15px" }}><strong>Client:</strong> Grocer Ease Store</Typography>
-                            <Typography sx={{ fontSize: "15px" }}><strong>Project date:</strong> 2023</Typography>
+                            <Typography sx={{ fontSize: "15px" }}><strong>Categories:</strong> Personal Project</Typography>
+                            <Typography sx={{ fontSize: "15px" }}><strong>Client:</strong> Vinn Fitness</Typography>
+                            <Typography sx={{ fontSize: "15px" }}><strong>Project date:</strong> March 2025</Typography>
                             <Typography sx={{ fontSize: "15px" }}><strong>Project URL:</strong>
                                 <a
                                     href="https://yourprojectlink.com"
@@ -95,16 +95,16 @@ function Grocerease() {
                                     View
                                 </a>
                             </Typography>
-                            <Typography sx={{ fontSize: "15px" }}><strong>Tools:</strong> HTML, CSS, JavaScript, PHP, MySQL, Bootstrap</Typography>
+                            <Typography sx={{ fontSize: "15px" }}><strong>Tools:</strong> HTML, CSS, React.js, TypeScript, MUI </Typography>
                         </Box>
                     </Box>
                     <Box>
-                        <Typography sx={{ fontSize: "2rem", fontWeight: "700", marginBottom: "1rem" }}>Grocer Ease Store</Typography>
+                        <Typography sx={{ fontSize: "1.5rem", fontWeight: "700", marginBottom: "1rem" }}>Vinn Fitness</Typography>
                         <Typography>
-                            GrocerEase Store is a modern e-commerce website that allows customers to browse and purchase high-quality
-                            products online with ease. It offers a seamless shopping experience, ensuring convenience and reliability
-                            for every customer. With a user-friendly interface and a wide selection of products, GrocerEase Store is
-                            designed to make online grocery shopping effortless and enjoyable.
+                            Vinn Fitness is a dynamic fitness and workout program website designed to help individuals of all levels achieve
+                            their health and fitness goals. Whether you're looking to lose weight, build muscle, or improve endurance,
+                            Vinn Fitness offers personalized workout routines, expert training plans, and nutrition guidance to keep you
+                            on track.
                         </Typography>
                     </Box>
                 </Box>
@@ -113,4 +113,4 @@ function Grocerease() {
     );
 }
 
-export default Grocerease;
+export default Vinn;

@@ -148,10 +148,9 @@ function Portfolio() {
 
                         {/* Dashboard */}
                         <MuiLink
-                            href="https://your-project-url.com"
+                            component={RouterLink}
+                            to="/portfoliopage/Grocereasedash"
                             underline="none"
-                            target="_blank"
-                            rel="noopener noreferrer"
                             sx={{ display: 'inline-block' }}
                         >
                             <Box
@@ -177,7 +176,7 @@ function Portfolio() {
                                     className="image"
                                     component="img"
                                     src="/dashboard/GrocerEaseStoreAdmin.png"
-                                    alt="GrocerEase Store"
+                                    alt="GrocerEase Store Dashboard"
                                     sx={{
                                         width: '100%',
                                         height: '100%',
@@ -216,17 +215,16 @@ function Portfolio() {
                                         transition: 'opacity 0.3s ease',
                                     }}
                                 >
-                                    GrocerEase Store
+                                    GrocerEase Store Dashboard
                                 </Typography>
                             </Box>
                         </MuiLink>
 
                         {/* Personal Project */}
                         <MuiLink
-                            href="https://your-project-url.com"
+                            component={RouterLink}
+                            to="/portfoliopage/Vinn"
                             underline="none"
-                            target="_blank"
-                            rel="noopener noreferrer"
                             sx={{ display: 'inline-block' }}
                         >
                             <Box
@@ -251,8 +249,8 @@ function Portfolio() {
                                 <Box
                                     className="image"
                                     component="img"
-                                    src="/web1/GrocerEaseStore.png"
-                                    alt="GrocerEase Store"
+                                    src="/vinn/vinn1.png"
+                                    alt="Vinn Fitness"
                                     sx={{
                                         width: '100%',
                                         height: '100%',
@@ -291,7 +289,7 @@ function Portfolio() {
                                         transition: 'opacity 0.3s ease',
                                     }}
                                 >
-                                    GrocerEase Store
+                                    Vinn Fitness
                                 </Typography>
                             </Box>
                         </MuiLink>

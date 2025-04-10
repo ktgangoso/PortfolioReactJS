@@ -4,13 +4,13 @@ import { Box, IconButton, Typography, Button } from '@mui/material';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const images = [
-    '/web1/GrocerEaseStore.png',
-    '/web1/website2.png',
-    '/web1/website3.png',
-    '/web1/website4.png',
+    '/dashboard/GrocerEaseStoreAdmin.png',
+    '/dashboard/admin2.png',
+    '/dashboard/admin3.png',
+    '/dashboard/admin4.png',
 ];
 
-function Grocerease() {
+function Grocereasedash() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
@@ -82,8 +82,8 @@ function Grocerease() {
                     }}>
                         <Typography sx={{ fontSize: "1.5rem", fontWeight: "600" }}>Project information</Typography>
                         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "column", gap: "1rem" }}>
-                            <Typography sx={{ fontSize: "15px" }}><strong>Categories:</strong> Website</Typography>
-                            <Typography sx={{ fontSize: "15px" }}><strong>Client:</strong> Grocer Ease Store</Typography>
+                            <Typography sx={{ fontSize: "15px" }}><strong>Categories:</strong> Website Dashboard</Typography>
+                            <Typography sx={{ fontSize: "15px" }}><strong>Client:</strong> Grocer Ease Store Dashboard</Typography>
                             <Typography sx={{ fontSize: "15px" }}><strong>Project date:</strong> 2023</Typography>
                             <Typography sx={{ fontSize: "15px" }}><strong>Project URL:</strong>
                                 <a
@@ -99,12 +99,12 @@ function Grocerease() {
                         </Box>
                     </Box>
                     <Box>
-                        <Typography sx={{ fontSize: "2rem", fontWeight: "700", marginBottom: "1rem" }}>Grocer Ease Store</Typography>
+                        <Typography sx={{ fontSize: "2rem", fontWeight: "700", marginBottom: "1rem" }}>GrocerEase Store Dashboard</Typography>
                         <Typography>
-                            GrocerEase Store is a modern e-commerce website that allows customers to browse and purchase high-quality
-                            products online with ease. It offers a seamless shopping experience, ensuring convenience and reliability
-                            for every customer. With a user-friendly interface and a wide selection of products, GrocerEase Store is
-                            designed to make online grocery shopping effortless and enjoyable.
+                            GrocerEase Store Dashboard is designed to efficiently monitor income and manage product inventory, allowing seamless tracking
+                            of stock levels. It enables users to check, update, and remove items while ensuring accurate availability status.
+                            With its intuitive management system, businesses can optimize operations, reduce stock discrepancies, and improve
+                            overall efficiency.
                         </Typography>
                     </Box>
                 </Box>
@@ -113,4 +113,4 @@ function Grocerease() {
     );
 }
 
-export default Grocerease;
+export default Grocereasedash;
