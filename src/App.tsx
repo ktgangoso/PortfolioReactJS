@@ -15,12 +15,12 @@ import ContactIcon from '@mui/icons-material/EmailOutlined';
 import HireMeIcon from '@mui/icons-material/GetAppOutlined';
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, href } from 'react-router-dom';
 
 const socialIcons = [
-  { icon: <FacebookIcon />, color: '#007bff' },
-  { icon: <GitHubIcon />, color: '#007bff' },
-  { icon: <LinkedInIcon />, color: '#0A66C2' },
+  { icon: <FacebookIcon />, color: '#007bff', href: 'https://www.facebook.com/kevin.gt2001' },
+  { icon: <GitHubIcon />, color: '#007bff', href: 'https://github.com/ktgangoso' },
+  { icon: <LinkedInIcon />, color: '#0A66C2', href: 'https://www.linkedin.com/in/kevin-gangoso-37b9102aa/' },
 ];
 
 const navLinks = [
@@ -122,26 +122,33 @@ function App() {
 
       {/* Social Icons */}
       <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', mb: 2 }}>
-        {socialIcons.map(({ icon, color }, index) => (
-          <Box
+        {socialIcons.map(({ icon, color, href }, index) => (
+          <a
             key={index}
-            sx={{
-              borderRadius: '50%',
-              backgroundColor: "rgba(160, 160, 160, 0.15)",
-              color: '#fff',
-              p: ".3rem",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              height: 30,
-              width: 30,
-              cursor: 'pointer',
-              transition: '0.3s',
-              '&:hover': { bgcolor: color },
-            }}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none' }} // remove underline
           >
-            {icon}
-          </Box>
+            <Box
+              sx={{
+                borderRadius: '50%',
+                backgroundColor: "rgba(160, 160, 160, 0.15)",
+                color: '#fff',
+                p: ".3rem",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: 30,
+                width: 30,
+                cursor: 'pointer',
+                transition: '0.3s',
+                '&:hover': { bgcolor: color },
+              }}
+            >
+              {icon}
+            </Box>
+          </a>
         ))}
       </Box>
 
