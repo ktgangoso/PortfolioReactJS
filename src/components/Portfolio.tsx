@@ -1,4 +1,5 @@
-import { Box, Typography, Link as MuiLink } from '@mui/material'
+import * as React from 'react';
+import { Box, Typography, Tabs, Tab, Link as MuiLink } from '@mui/material'
 import { Link as RouterLink } from 'react-router-dom';
 
 
