@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-import Typed from 'typed.js';
+import { useEffect, useState } from 'react';
 import { Box, Drawer, IconButton, List, ListItemButton, ListItemText, Typography, useMediaQuery, } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -12,10 +11,8 @@ import SkillsIcon from '@mui/icons-material/SettingsOutlined';
 import ResumeIcon from '@mui/icons-material/ArticleOutlined';
 import PortfolioIcon from '@mui/icons-material/FilterOutlined';
 import ContactIcon from '@mui/icons-material/EmailOutlined';
-import HireMeIcon from '@mui/icons-material/GetAppOutlined';
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, href } from 'react-router-dom';
 
 const socialIcons = [
   { icon: <FacebookIcon />, color: '#007bff', href: 'https://www.facebook.com/kevin.gt2001' },

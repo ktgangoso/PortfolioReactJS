@@ -2,13 +2,7 @@ import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import {
     Box,
-    Drawer,
-    IconButton,
-    List,
-    ListItemButton,
-    ListItemText,
     Typography,
-    useMediaQuery,
 } from '@mui/material';
 
 

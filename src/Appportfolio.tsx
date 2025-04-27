@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-import Typed from 'typed.js';
+import { useEffect, useState } from 'react';
 import {
   Box,
   Drawer,
@@ -16,15 +15,8 @@ import FacebookIcon from '@mui/icons-material/FacebookRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import HomeIcon from '@mui/icons-material/HomeOutlined';
-import AboutIcon from '@mui/icons-material/PersonOutlineOutlined';
-import SkillsIcon from '@mui/icons-material/SettingsOutlined';
-import ResumeIcon from '@mui/icons-material/ArticleOutlined';
-import PortfolioIcon from '@mui/icons-material/FilterOutlined';
-import ContactIcon from '@mui/icons-material/EmailOutlined';
-import HireMeIcon from '@mui/icons-material/GetAppOutlined';
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const socialIcons = [
   { icon: <FacebookIcon />, color: '#007bff' },

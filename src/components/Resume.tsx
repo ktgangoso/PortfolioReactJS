@@ -1,5 +1,4 @@
-import React from 'react';
-import { Box, Typography, List, ListItem, Divider } from '@mui/material';
+import { Box, Typography, List, ListItem } from '@mui/material';
 
 function Resume() {
     return (
