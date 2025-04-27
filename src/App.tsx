@@ -30,7 +30,7 @@ const navLinks = [
   { icon: <ResumeIcon />, label: 'Resume', href: '/#resume' },
   { icon: <PortfolioIcon />, label: 'Portfolio', href: '/#portfolio' },
   { icon: <ContactIcon />, label: 'Contact', href: '/#contact' },
-  { icon: <HireMeIcon />, label: 'Hire Me', href: '/hireme' },
+  // { icon: <HireMeIcon />, label: 'Hire Me', href: '/hireme' },
 ];
 
 function App() {

@@ -87,6 +87,25 @@ function Resume() {
                                 </List>
                             </Box>
                         </Box>
+
+                              {/* H2 Software Consulting Services Inc. April 21,2025 */}
+                              <Box mb={4}>
+                            <Typography variant="h6" fontWeight={600} color="#007BFF" sx={{ letterSpacing: '0.5px' }}>
+                            H2 Software Consulting Services Inc.
+                            </Typography>
+                            <Typography variant="body2" color="#757d87" mb={1}>
+                                April 2025 - Present
+                            </Typography>
+
+                            <Box mt={2}>
+                                <Typography variant="body1" fontWeight={600} color="#333" mb={1}>IT Service Desk Analyst</Typography>
+                                <List sx={{ pl: 2, color: '#333' }}>
+                                    <ListItem>- </ListItem>
+                                    <ListItem>- </ListItem>
+                                    <ListItem>- </ListItem>
+                                </List>
+                            </Box>
+                        </Box>
                     </Box>
 
                     {/* Education */}
