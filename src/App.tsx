@@ -32,7 +32,7 @@ const navLinks = [
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('/dashboard');
+  const [activeLink, setActiveLink] = useState('/#home');
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   // const typedEl = useRef(null); // 

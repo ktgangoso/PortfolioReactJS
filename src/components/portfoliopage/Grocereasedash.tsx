@@ -87,7 +87,7 @@ function Grocereasedash() {
                             <Typography sx={{ fontSize: "15px" }}><strong>Project date:</strong> 2023</Typography>
                             <Typography sx={{ fontSize: "15px" }}><strong>Project URL:</strong>
                                 <a
-                                    href="https://yourprojectlink.com"
+                                    href="#"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{ color: "#1976d2", textDecoration: "none", cursor: "pointer", marginLeft: "5px" }}
