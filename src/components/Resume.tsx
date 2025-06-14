@@ -88,10 +88,10 @@ function Resume() {
                             </Box>
                         </Box>
 
-                              {/* H2 Software Consulting Services Inc. April 21,2025 */}
-                              <Box mb={4}>
+                        {/* H2 Software Consulting Services Inc. April 21,2025 */}
+                        <Box mb={4}>
                             <Typography variant="h6" fontWeight={600} color="#007BFF" sx={{ letterSpacing: '0.5px' }}>
-                            H2 Software Consulting Services Inc.
+                                H2 Software Consulting Services Inc.
                             </Typography>
                             <Typography variant="body2" color="#757d87" mb={1}>
                                 April 2025 - Present
@@ -100,9 +100,10 @@ function Resume() {
                             <Box mt={2}>
                                 <Typography variant="body1" fontWeight={600} color="#333" mb={1}>IT Service Desk Analyst</Typography>
                                 <List sx={{ pl: 2, color: '#333' }}>
-                                    <ListItem>- </ListItem>
-                                    <ListItem>- </ListItem>
-                                    <ListItem>- </ListItem>
+                                    <ListItem>- Resolve a wide range of technical issues, including hardware malfunctions, software errors,
+                                        network connectivity problems, and printer-related concerns.</ListItem>
+                                    <ListItem>- Assist users in troubleshooting and resolving their problems within a short time period
+                                        to minimize downtime and maintain productivity.</ListItem>
                                 </List>
                             </Box>
                         </Box>
